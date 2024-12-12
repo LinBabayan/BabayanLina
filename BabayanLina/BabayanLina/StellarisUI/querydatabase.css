@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: "Golos Text", sans-serif;
+    background-image: url('back.png');
+    background-repeat: no-repeat;   
+    background-size: cover;         
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+    .header, .footer {
+        width: 100%;
+    }
+    .h31, .h32 {
+        font-size: 16px; 
+    }
+}
+main {
+    padding: 20px 0;
+    flex-grow: 1;
+  }
+  
+.header {
+    top: 5px;
+    height: 77px;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;      
+    padding: 0 20px;    
+  }
+  .container1 {
+    top: 50px;
+    position: absolute;
+    max-width: 1200px;      
+    padding: 0 20px;    
+  }
+
+ 
+  .button-link {
+    display: inline-block;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    top: 300px;
+    left: 260px;
+    position: absolute;
+    max-width: 1200px;      
+    padding: 0 20px;    
+    width: 201px;
+    height: 79px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border-right: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+    justify-content: center; 
+    align-items: center;
+  }
+  
+  
+  .button-link:hover {
+    background-color: rgba(255, 255, 255, 0.245);
+  }
+  .button-link:active{
+    background-color: rgba(255, 255, 255, 0.245);
+  }
+  
+  .button-link1 {
+    display: inline-block;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    top: 300px;
+    right: 260px;
+    position: absolute;
+    max-width: 1200px;      
+    padding: 0 20px;    
+    width: 247px;
+    height: 79px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border-right: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+    justify-content: center; 
+    align-items: center;
+  }
+  .button-link1:hover {
+    background-color: rgba(255, 255, 255, 0.245);
+  }
+  .button-link1:active{
+    background-color: rgba(255, 255, 255, 0.245);
+  }
+
+  .container4 {
+    bottom: 210px;
+    position: absolute;
+    max-width: 1200px;      
+    padding: 0 20px;    
+  }
+  .container5 {
+    bottom: 160px;
+    position: absolute;
+    max-width: 1200px;      
+    padding: 0 20px;    
+  }
+
+.h31 {
+    top: 8px;
+    right: 150px;
+    color: #FFF;
+    font-family: "Golos Text";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 43px;
+}
+
+.h32 {
+    top: 8px;
+    right: 250px;
+    color: #FFF;
+    font-family: "Golos Text";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 162px;
+}
+.h33 {
+    position: relative;
+    left: 80px;
+    color: #FFF;
+    font-family: "Golos Text";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 146px;
+    margin: 22px;
+}
+
+.svg1 {
+    top: 19px;
+    left: 30px;
+    width: 49px;
+    height: 49px;
+    flex-shrink: 0;
+}
+
+.svg2 {
+    top: 27px;
+    right: 50px;
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+}
+
+.h11 {
+    color: white;
+    font-family: "Golos Text";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.h23 {
+    width: 294px;
+    flex-shrink: 0;
+    color:white  !important;
+    font-family: "Golos Text";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.h24 {
+    width: 320px;
+    flex-shrink: 0;
+    color: white !important;
+    font-family: "Golos Text";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    bottom: 200px;
+}
+
+.h21 {
+    color: #FFF;
+    font-family: "Golos Text";
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 98px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.h22 {
+    color: #FFF;
+    font-family: "Golos Text";
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 154px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input.chb {
+    display: none; 
+}
+
+
+label {
+    position: relative;
+    padding-left: 30px; 
+    cursor: pointer;
+    font-size: 18px; 
+    color: #ffffff; 
+}
+
+label::before {
+    content: ''; 
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-right: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+    border-radius: 4px; 
+    background-color: rgba(255, 255, 255, 0); 
+    transition: background-color 0.3s, border-color 0.3s; 
+}
+
+
+input.chb:checked + label::before {
+    background-color: #ffffff49;
+    border-radius: 4px;
+    border-right: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+}
+
+
+input.chb:checked + label::after {
+    content: ''; 
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 8px;
+    height: 8px;
+    background-color: rgba(255, 255, 255, 0); 
+    clip-path: polygon(0 0, 100% 100%, 40% 60%, 30% 50%, 10% 80%); 
+}
+
+
+.fsvg1 {
+    right: 125px;
+    width: 31px;
+    height: 31px;
+    flex-shrink: 0;
+    color: #FFF;
+}
+.fsvg2 {
+    right: 80px;
+    width: 31px;
+    height: 31px;
+    flex-shrink: 0;
+    color: #FFF;
+}
+.fsvg3 {
+    right: 35px;
+    width: 31px;
+    height: 31px;
+    flex-shrink: 0;
+    color: #FFF;
+}
+
+.h31, .h32, .svg1, .svg2 {
+    position: absolute;
+}
+
+  footer {
+    width: 100%;
+    display: flex;
+    padding: 10px 0px 10px 0px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 50px;  
+    background: rgba(0, 0, 0, 0.50);
+    margin-top: auto;
+    position: fixed;
+    bottom: 0;
+    
+}

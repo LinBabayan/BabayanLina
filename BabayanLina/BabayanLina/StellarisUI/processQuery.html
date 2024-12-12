@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Results</title>
+    <link rel="stylesheet" href="processQuery.css">
+</head>
+<body>
+  <header class = header>
+        <div class="container">
+            <h3 class = h33>Stellaris</h3>
+            <a href="home.html">
+                <svg class = svg1 xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 49 49" fill="none">
+                    <g clip-path="url(#clip0_0_6)">
+                    <path d="M1.28952 28.3685C0.580264 28.3685 0 28.9487 0 29.6579C0 30.3671 0.580264 30.9474 1.28952 30.9474C1.99877 30.9474 2.57903 30.3671 2.57903 29.6579C2.57891 28.9487 1.99865 28.3685 1.28952 28.3685ZM1.28952 18.0526C0.580264 18.0526 0 18.6329 0 19.3421C0 20.0514 0.580264 20.6316 1.28952 20.6316C1.99877 20.6316 2.57903 20.0514 2.57903 19.3421C2.57891 18.6329 1.99865 18.0526 1.28952 18.0526ZM19.3421 46.4211C18.6329 46.4211 18.0526 47.0014 18.0526 47.7106C18.0526 48.4199 18.6329 49.0001 19.3421 49.0001C20.0514 49.0001 20.6316 48.4199 20.6316 47.7106C20.6316 47.0014 20.0514 46.4211 19.3421 46.4211ZM9.02636 6.44733C7.60798 6.44733 6.44745 7.60786 6.44745 9.02624C6.44745 10.4446 7.60786 11.6053 9.02636 11.6053C10.4449 11.6053 11.6053 10.4447 11.6053 9.02636C11.6053 7.60798 10.4447 6.44733 9.02636 6.44733ZM9.02636 16.7632C7.60798 16.7632 6.44745 17.9237 6.44745 19.3421C6.44745 20.7605 7.60798 21.921 9.02636 21.921C10.4447 21.921 11.6053 20.7605 11.6053 19.3421C11.6053 17.9237 10.4447 16.7632 9.02636 16.7632ZM9.02636 27.079C7.60798 27.079 6.44745 28.2395 6.44745 29.6579C6.44745 31.0763 7.60798 32.2368 9.02636 32.2368C10.4447 32.2368 11.6053 31.0764 11.6053 29.6579C11.6053 28.2395 10.4447 27.079 9.02636 27.079ZM47.7106 20.6316C48.4199 20.6316 49.0001 20.0514 49.0001 19.3421C49.0001 18.6329 48.4199 18.0526 47.7106 18.0526C47.0014 18.0526 46.4211 18.6329 46.4211 19.3421C46.4211 20.0514 47.0014 20.6316 47.7106 20.6316ZM29.6579 2.57891C30.3671 2.57891 30.9474 1.99865 30.9474 1.28939C30.9474 0.580264 30.3671 0 29.6579 0C28.9486 0 28.3684 0.580264 28.3684 1.28952C28.3685 1.99865 28.9487 2.57891 29.6579 2.57891ZM19.3421 11.6053C20.7605 11.6053 21.921 10.4447 21.921 9.02636C21.921 7.60798 20.7605 6.44745 19.3421 6.44745C17.9237 6.44745 16.7632 7.60798 16.7632 9.02636C16.7632 10.4447 17.9237 11.6053 19.3421 11.6053ZM19.3421 2.57891C20.0514 2.57891 20.6316 1.99865 20.6316 1.28939C20.6316 0.580264 20.0514 0 19.3421 0C18.6329 0 18.0526 0.580264 18.0526 1.28952C18.0526 1.99865 18.6329 2.57891 19.3421 2.57891ZM29.6579 11.6053C31.0763 11.6053 32.2368 10.4447 32.2368 9.02636C32.2368 7.60798 31.0763 6.44745 29.6579 6.44745C28.2395 6.44745 27.079 7.60798 27.079 9.02636C27.079 10.4447 28.2395 11.6053 29.6579 11.6053ZM9.02636 37.3947C7.60798 37.3947 6.44745 38.5553 6.44745 39.9736C6.44745 41.392 7.60798 42.5525 9.02636 42.5525C10.4447 42.5525 11.6053 41.3921 11.6053 39.9738C11.6053 38.5553 10.4447 37.3947 9.02636 37.3947ZM29.6579 15.4737C27.5173 15.4737 25.7895 17.2016 25.7895 19.3421C25.7895 21.4827 27.5173 23.2105 29.6579 23.2105C31.7984 23.2105 33.5263 21.4827 33.5263 19.3421C33.5263 17.2016 31.7984 15.4737 29.6579 15.4737ZM39.9738 27.079C38.5554 27.079 37.3948 28.2395 37.3948 29.6579C37.3948 31.0763 38.5554 32.2368 39.9738 32.2368C41.3921 32.2368 42.5527 31.0763 42.5527 29.6579C42.5527 28.2395 41.3921 27.079 39.9738 27.079ZM39.9738 37.3947C38.5554 37.3947 37.3948 38.5553 37.3948 39.9736C37.3948 41.392 38.5554 42.5525 39.9738 42.5525C41.3921 42.5527 42.5527 41.3921 42.5527 39.9738C42.5527 38.5553 41.3921 37.3947 39.9738 37.3947ZM39.9738 16.7632C38.5554 16.7632 37.3948 17.9237 37.3948 19.3421C37.3948 20.7605 38.5554 21.921 39.9738 21.921C41.3921 21.921 42.5527 20.7605 42.5527 19.3421C42.5527 17.9237 41.3921 16.7632 39.9738 16.7632ZM47.7106 28.3685C47.0014 28.3685 46.4211 28.9487 46.4211 29.658C46.4211 30.3671 47.0014 30.9474 47.7106 30.9474C48.4199 30.9474 49.0001 30.3671 49.0001 29.6579C49 28.9487 48.4197 28.3685 47.7106 28.3685ZM39.9738 6.44733C38.5554 6.44733 37.3948 7.60786 37.39489.02624C37.3948 10.4446 38.5553 11.6053 39.9738 11.6053C41.3921 11.6053 42.5527 10.4447 42.5527 9.02636C42.5527 7.60798 41.3921 6.44733 39.9738 6.44733ZM19.3421 25.7895C17.2016 25.7895 15.4737 27.5173 15.4737 29.6579C15.4737 31.7984 17.2016 33.5263 19.3421 33.5263C21.4827 33.5263 23.2105 31.7984 23.2105 29.6579C23.2105 27.5173 21.4827 25.7895 19.3421 25.7895ZM19.3421 37.3947C17.9237 37.3947 16.7632 38.5553 16.7632 39.9736C16.7632 41.392 17.9237 42.5525 19.3421 42.5525C20.7605 42.5525 21.921 41.392 21.921 39.9736C21.921 38.5553 20.7605 37.3947 19.3421 37.3947ZM19.3421 15.4737C17.2016 15.4737 15.4737 17.2016 15.4737 19.3421C15.4737 21.4827 17.2016 23.2105 19.3421 23.2105C21.4827 23.2105 23.2105 21.4827 23.2105 19.3421C23.2105 17.2016 21.4827 15.4737 19.3421 15.4737ZM29.6579 37.3947C28.2395 37.3947 27.079 38.5553 27.079 39.9736C27.079 41.3921 28.2395 42.5527 29.6579 42.5527C31.0763 42.5527 32.2368 41.3921 32.2368 39.9738C32.2369 38.5553 31.0764 37.3947 29.6579 37.3947ZM29.6579 46.4211C28.9486 46.4211 28.3684 47.0014 28.3684 47.7106C28.3684 48.4199 28.9486 49.0001 29.6579 49.0001C30.3671 49.0001 30.9474 48.4199 30.9474 47.7106C30.9474 47.0014 30.3671 46.4211 29.6579 46.4211ZM29.6579 25.7895C27.5173 25.7895 25.7895 27.5173 25.7895 29.6579C25.7895 31.7984 27.5173 33.5263 29.6579 33.5263C31.7984 33.5263 33.5263 31.7984 33.5263 29.6579C33.5263 27.5173 31.7984 25.7895 29.6579 25.7895Z" fill="white"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_0_6">
+                    <rect width="49" height="49" fill="white"/>
+                    </clipPath>
+                    </defs>
+                </svg>
+            </a>
+            <h3 class = "centered-title" id="title">Process Query</h3>
+            <a href="info.html">
+                <h3 class = h31>Info</h3>
+            </a>
+            <svg class = svg2 xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                <path d="M34.5 14.5001H1.5C0.672 14.5001 0 13.8281 0 13.0001C0 12.1721 0.672 11.5001 1.5 11.5001H34.5C35.328 11.5001 36 12.1721 36 13.0001C36 13.8281 35.328 14.5001 34.5 14.5001ZM34.5 3H1.5C0.672 3 0 2.328 0 1.5C0 0.672 0.672 0 1.5 0H34.5C35.328 0 36 0.672 36 1.5C36 2.328 35.328 3 34.5 3ZM34.5 25.9999H1.5C0.672 25.9999 0 25.3279 0 24.4999C0 23.6719 0.672 22.9999 1.5 22.9999H34.5C35.328 22.9999 36 23.6719 36 24.4999C36 25.3279 35.328 25.9999 34.5 25.9999Z" fill="white"/>
+            </svg>
+        </div>
+    </header>
+    <main>
+        <div id="errorMessage" class="error-message" style="display: none;"></div>
+
+        <div class="table-container" id="resultsContainer"></div>
+
+
+        <div class="query-container" >
+            <textarea id="adql" readonly></textarea>
+        </div>
+    </main>
+
+    <script>
+        async function processQueryRequest() {
+            // Extract dbName and queryParams from the URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const dbName = urlParams.get('dbName');
+            const queryParams = urlParams.get('queryParams');
+            const crossMatching = urlParams.get('crossMatching')
+            const isCrossMatching = crossMatching === "true";
+
+            document.getElementById('title').textContent = dbName + " Query Results";
+            // Send request to the Stellaris server
+            try {
+                if(isCrossMatching)
+                {
+                    document.getElementById('title').textContent += "/Cross Matching";
+                    await processCrossMatching(dbName, queryParams)
+                }
+                else {
+                    await processQueryCatalog(dbName, queryParams)
+                }
+            }
+            catch (error) {
+                showErrorMessage(`Error: ${error.message}`);
+           }
+        }
+
+        //Send processQuery request to Stellaris
+        async function processQueryCatalog(dbName, queryParams) {
+            // Send request to the server
+            const response = await fetch('http://localhost:5000/processQuery', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    db_name: dbName,
+                    query_params: queryParams,
+                }),
+            });
+
+            const result = await response.json();
+
+            if (result.status === "success") {
+                // Display the results in a table
+                displayResults(result.columns, result.data);
+            }
+            else {
+                showErrorMessage(`Status: ${result.status} - ${result.error}`)
+            }
+            showQuery(result.query)
+        }
+
+        //Send crossMatching request to Stellaris
+        async function processCrossMatching(dbName, queryParams)
+        {
+             // Send request to the server
+            const response = await fetch('http://localhost:5000/crossMatching', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    db_name_src: dbName,
+                    query_params: queryParams,
+                }),
+            });
+
+            const result = await response.json();
+
+            if (result.status === "success") {
+                // Display the results in a table
+                displayResults(result.columns, result.data);
+            }
+            else {
+                showErrorMessage(`Status: ${result.status} - ${result.error}`)
+            }
+            showQuery(result.query_source + "\n\nCrossMatch with Simbad query:\n" + result.crossmatch_query)
+        }
+
+        function displayResults(columns, data) {
+            const container = document.getElementById('resultsContainer');
+            container.innerHTML = ""; // Clear previous results if any
+
+            if (columns.length === 0 || data.length === 0) {
+                container.textContent = "No results available.";
+                return;
+            }
+
+            const table = document.createElement('table');
+
+            // table headers
+            const headerRow = document.createElement('tr');
+            // Add the column header for row numbers
+            const numberHeader = document.createElement('th');
+            numberHeader.textContent = "#";
+            headerRow.appendChild(numberHeader);
+
+            //add other columns
+            columns.forEach(col => {
+                const th = document.createElement('th');
+                th.textContent = col;
+                headerRow.appendChild(th);
+            });
+            table.appendChild(headerRow);
+
+            // Add table rows
+           data.forEach((row, index) => {
+                const tr = document.createElement('tr');
+
+                // Add the row number
+                const numberCell = document.createElement('td');
+                numberCell.textContent = index + 1; // Row numbering starts from 1
+                numberCell.style.background = "linear-gradient(to bottom, rgb(200, 200, 200), rgb(150, 150, 150))"; // Gradient styling
+                numberCell.style.textAlign = "center";
+                numberCell.style.color = "black";
+                tr.appendChild(numberCell);
+
+                columns.forEach(col => {
+                    const td = document.createElement('td');
+                    td.textContent = row[col] || ""; // Handle missing data gracefully
+                    tr.appendChild(td);
+                });
+                table.appendChild(tr);
+            });
+
+            container.appendChild(table);
+        }
+
+        function showErrorMessage(message) {
+            const errorMessageElement = document.getElementById('errorMessage');
+            errorMessageElement.textContent = message;
+            errorMessageElement.style.display = 'block';
+        }
+
+        function showQuery(query) {
+            const sqlQueryBox = document.getElementById('adql');
+            sqlQueryBox.value = query;
+        }
+
+        // Send request to Stellaris when the page loads and process responseFetch results
+        processQueryRequest();
+    </script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+@import url('home.css');
+
+.form-container {
+    display: flex;
+    align-items: flex-end;
+    max-width: 1000px;
+    margin: auto;
+    gap: 10px;
+}
+
+form {
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 10px;
+    width: 80%;
+    height: 80vh;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header .centered-title {
+    position: relative;
+    color: #FFF;
+    margin: 22px;
+    align-items: flex-start;
+    text-align: center;
+    font-size: 28px;
+    line-height: normal;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+    color: #FFF;
+    font-size: 16px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 550px;
+}
+
+.text-container1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 415px;
+}
+
+.text {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.note {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-left: 5px;
+}
+
+input[type="number"] {
+    flex: 1;
+    margin: 0 5px;
+    padding: 8px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    color: #FFF;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+}
+
+input[type="number"]::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.submit-button {
+    align-self: flex-end;
+    padding: 12px 24px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #FFF;
+    font-size: 16px;
+    font-family: "Golos Text", sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.submit-button:active  {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+select {
+    padding: 8px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    color: #FFF;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+    font-family: "Golos Text", sans-serif;
+    width: 370px;
+    margin: 0 5px;
+}
+
+select option {
+    background: rgba(0, 0, 0, 0.9);
+    color: #FFF;
+}
+
