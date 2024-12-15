@@ -2,7 +2,7 @@ import sys
 import os
 from flask import Flask, request
 from flask_cors import CORS
-import numpy as np
+
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*", "allow_headers": ["Content-Type", "Authorization"]}})
 
@@ -42,8 +42,7 @@ def process_query():
 
         # Call QueryCatalog
         catalog, query, columns, data, table = db_access.QueryCatalog(query_params_json, limit, chunk_size)
-        processed_data = replace_nan_with_none(data)
-        return __form_success_response(catalog, query, columns, processed_data), 200
+        return __form_success_response(catalog, query, columns, data), 200
     
     except ValueError as e:
         return __form_error_response("","", "Input error", str(e)), 400
@@ -58,9 +57,7 @@ def cross_matching():
         db_access_src, db_name_src, db_access_to_match, db_name_to_match, query_params_json, limit, chunk_size = __validateCrossMatchingInput(request.data)
 
         catalog_source, query, catalog_to_match, crossmatch_query, columns, data = CrossMatching().CrossMatching(db_access_src, db_access_to_match, query_params_json, limit, chunk_size)
-        processed_data = replace_nan_with_none(data)
-
-        return __form_success_crossmatch_response(catalog_source, query, catalog_to_match, crossmatch_query, columns, processed_data), 200
+        return __form_success_crossmatch_response(catalog_source, query, catalog_to_match, crossmatch_query, columns, data), 200
 
     except ValueError as e:
         return __form_error_crossmatch_response("","", "","", "Input error", str(e)), 400
@@ -189,17 +186,6 @@ def __form_error_crossmatch_response(catalog_source, query, catalog_to_match, cr
         "status": status,
         "error": error_message
     }, indent=2)
-
-#Replace NaN values in the data with None since JSON does not recognize NaN
-def replace_nan_with_none(data):
-    if isinstance(data, list):
-        return [replace_nan_with_none(item) for item in data]
-    elif isinstance(data, dict):
-        return {key: replace_nan_with_none(value) for key, value in data.items()}
-    elif isinstance(data, float) and np.isnan(data):
-        return None
-    else:
-        return data
 
 class NumpyEncoder(json.JSONEncoder):
     def default(self, obj):
